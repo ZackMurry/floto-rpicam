@@ -2,7 +2,7 @@ FROM balenalib/raspberrypi4-64-debian-python
 
 # pip install python deps from requirements.txt
 # For caching until requirements.txt changes
-RUN apt install libraspberrypi-bin
+RUN apt install libraspberrypi-bin gcc
 COPY ./requirements.txt /requirements.txt
 RUN READTHEDOCS=True pip install -r /requirements.txt
 # RUN apt install rpicam-apps
