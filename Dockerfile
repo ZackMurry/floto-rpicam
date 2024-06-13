@@ -15,7 +15,6 @@ RUN apt-get update && \
     libopencv-dev \
     libatlas3-base \
     libatlas-base-dev \
-    libjasper-dev \
     libavformat-dev \
     libswscale-dev \
     libavdevice-dev \
