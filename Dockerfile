@@ -1,4 +1,4 @@
-FROM balenalib/raspberry-pi-debian-python:3.7-3.8
+FROM balenalib/raspberrypi4-64-debian-python
 
 # pip install python deps from requirements.txt
 # For caching until requirements.txt changes
