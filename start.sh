@@ -1,2 +1,3 @@
 echo "Starting!"
-modprobe v4l2_common && python demo.py &
+modprobe v4l2_common
+python3 demo.py
