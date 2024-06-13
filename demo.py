@@ -1,13 +1,13 @@
 import time
-import picamera
+import picamera2
 
 print('Taking picture!')
-with picamera.PiCamera() as camera:
-    camera.resolution = (320, 240)
-    # Camera warm-up time
-    time.sleep(2)
-    camera.capture('/usr/src/app.jpg')
+# with picamera.PiCamera() as camera:
+#     camera.resolution = (320, 240)
+#     # Camera warm-up time
+#     time.sleep(2)
+#     camera.capture('/usr/src/app.jpg')
 
-print('Picture taken')
+# print('Picture taken')
 
-time.sleep(10)
+# time.sleep(10)
