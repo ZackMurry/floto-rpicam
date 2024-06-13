@@ -9,24 +9,24 @@ RUN apt-get update && \
     python3-setuptools \
     gstreamer-1.0 \
     v4l-utils \
-    libopus-dev \
-    libvpx-dev \
-    libsrtp2-dev \
-    libopencv-dev \
-    libatlas3-base \
-    libatlas-base-dev \
+    # libopus-dev \
+    # libvpx-dev \
+    # libsrtp2-dev \
+    # libopencv-dev \
+    # libatlas3-base \
+    # libatlas-base-dev \
     libavformat-dev \
-    libswscale-dev \
+    # libswscale-dev \
     libavdevice-dev \
     libavfilter-dev \
     libavcodec-dev \
   && apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Enable the v4l2 driver for the Raspberry Pi camera
-#RUN printf "bcm2835-v4l2\n" >> /etc/modules
-RUN pip3 install --upgrade pip 
-RUN pip3 install async-timeout av==6.1.0
-RUN pip3 install pyee==8.2.2 aiohttp aiohttp_basicauth==0.1.3 aioice==0.6.10 aiortc==0.9.11 numpy==1.15.4 opencv-python==3.4.4.19 --index-url https://www.piwheels.org/simple
+RUN printf "bcm2835-v4l2\n" >> /etc/modules
+# RUN pip3 install --upgrade pip 
+# RUN pip3 install async-timeout av==6.1.0
+# RUN pip3 install pyee==8.2.2 aiohttp aiohttp_basicauth==0.1.3 aioice==0.6.10 aiortc==0.9.11 numpy==1.15.4 opencv-python==3.4.4.19 --index-url https://www.piwheels.org/simple
 
 
 EXPOSE 5201
