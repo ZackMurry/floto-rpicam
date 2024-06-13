@@ -16,12 +16,8 @@ RUN apt-get update && \
     libatlas3-base \
     libatlas-base-dev \
     libjasper-dev \
-    libilmbase12 \
-    libopenexr22 \
     libavformat-dev \
     libswscale-dev \
-    libqtgui4 \
-    libqt4-test \
     libavdevice-dev \
     libavfilter-dev \
     libavcodec-dev \
