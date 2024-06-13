@@ -1,6 +1,4 @@
-FROM balenalib/raspberrypi4-ubuntu
-RUN apk update
-RUN apk add --no-cache bash
+FROM balenalib/raspberrypi4-64-debian
 
 # Install dependencies
 RUN apt-get update && \
