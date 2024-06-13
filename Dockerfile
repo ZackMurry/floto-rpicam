@@ -4,7 +4,7 @@ FROM balenalib/raspberrypi4-64-python
 # For caching until requirements.txt changes
 COPY ./requirements.txt /requirements.txt
 RUN READTHEDOCS=True pip install -r /requirements.txt
-RUN apt install v4l-utils
+RUN apt install rpicam-apps
 
 COPY . /usr/src/app
 WORKDIR /usr/src/app
