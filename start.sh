@@ -3,6 +3,9 @@
 echo "Running edevadm"
 udevadm control --reload
 
+echo "Running rpicam-hello"
+rpicam-hello --list-cameras -n -v
+
 echo "Running libcamera-hello"
 libcamera-hello --list-cameras -n -v
 

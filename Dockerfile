@@ -1,8 +1,9 @@
 FROM balenalib/raspberrypi4-64-debian:bullseye
 
 RUN install_packages \
-    libcamera-dev \
-    libcamera-apps-lite \
+    # libcamera-dev \
+    # libcamera-apps-lite \
+    rpicam-apps \
     python3 \
     v4l-utils
 
