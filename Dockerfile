@@ -1,9 +1,10 @@
-FROM debian:bullseye
+FROM balenalib/raspberrypi4-64-debian
 
 RUN ls /etc
 RUN ls /etc/udev
 RUN ls /etc/udev/rules.d
 RUN cat /etc/udev/rules.d/raspberrypi.rules
+RUN cat /boot/config.txt
 
 # # Install necessary dependencies and tools
 # RUN apt-get update && \
