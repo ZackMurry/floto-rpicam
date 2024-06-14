@@ -3,6 +3,9 @@
 echo "Running edevadm"
 udevadm control --reload
 
+echo "Running rpicam-still -o image.png --width 1920 --height 1080"
+rpicam-still -o image.png --width 1920 --height 1080
+
 echo "Running rpicam-hello"
 rpicam-hello --list-cameras -n -v
 
