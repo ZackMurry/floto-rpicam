@@ -8,5 +8,6 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 COPY start.sh ./
 RUN chmod +x start.sh
+RUN usermod -a -G video root
 
 CMD ["sh", "./start.sh"]

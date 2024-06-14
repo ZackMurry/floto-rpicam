@@ -1,0 +1,15 @@
+gpu_mem_1024=256
+gpu_mem_256=64
+gpu_mem_512=128
+start_x=1
+camera_auto_detect=1
+disable_fw_kms_setup=0
+dtoverlay=imx708,cma-256
+avoid_warnings=1
+disable_splash=0
+dtparam=i2c_arm=on
+dtparam=spi=on
+dtparam=audio=on
+enable_uart=0
+gpu_mem=128
+
