@@ -1,3 +1,11 @@
+#!/bin/sh
+
+echo "Running edevadm"
+udevadm control --reload
+
+echo "Running libcamera-hello"
+libcamera-hello --list-cameras -n -v
+
 echo "Starting!"
 echo "ls /usr/lib/modules"
 ls /usr/lib/modules
