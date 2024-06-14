@@ -15,5 +15,7 @@ RUN chmod +x start.sh
 # RUN usermod -a -G video root
 
 ENV UDEV=on
+ENV PRIVILEGED=1
+ENV LIBCAMERA_LOG_LEVELS=*:0
 
 CMD ["sh","./start.sh"]
